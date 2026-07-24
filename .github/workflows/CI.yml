@@ -18,4 +18,4 @@ jobs:
           distribution: 'temurin'
 
       - name: Bulid Application
-        uses: mvn clean package
+        uses: ./mvnw clean package
