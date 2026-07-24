@@ -17,7 +17,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Grant execute permission for Maven wrapper
+        run: chmod +x ./mvnw
+        
       - name: Build Application
         uses: ./mvnw clean package
+        
       - name: Build Docker Image
         run: docker build -t CI-CD .
