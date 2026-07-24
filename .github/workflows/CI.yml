@@ -37,4 +37,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push Image
-        run: docker push ghcr.io/ravigauravpandey/ci-cd:latest
+        run: docker push ghcr.io/eren-si/ci-cd:latest
